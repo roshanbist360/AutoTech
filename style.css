@@ -1,0 +1,336 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 16px;
+}
+
+/*============== Heder section starts ================ */
+/*============== Heder section starts ================ */
+.topheader{
+    height: 8vh;
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 14px;
+    padding-left: 40px;
+    background: #000;
+    z-index: 20;
+    position: fixed;
+}
+
+.social-media i{
+    margin:0px 5px;
+    font-size: 20px;
+}
+
+.changeWeight{
+   font-weight: 300;
+}
+
+.para:hover,.ph-no a i:hover,.email a i:hover,.social-media i:hover{
+    color: #dddddd;
+    cursor: pointer;
+}
+
+/*============== Heder section ends and navbar starts ================ */
+/*============== Heder section ends and navbar starts ================ */
+.navbar{
+   height: 80px;
+   width: 100%;
+   background: #222;
+   z-index: 15;
+   margin-top: 8vh;
+   }
+
+.logo{
+   float: left;
+   margin-left: 20px;
+   height:70px;
+   width:140px;
+}
+
+.logo img{
+   height:60px;
+   width:120px; 
+}
+
+.nav-menu{
+   float: right;
+   margin-top: 15px;
+   margin-right: 25px;
+ }
+
+.nav-menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.nav-menu a:hover{
+    text-decoration: none;
+    color:  #dd0000;
+}
+
+/*Below  code is for responsive side menu for mobile and other medium devices*/
+.navmenu{
+            float: right;
+            margin-right: 0px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            height: 50px;
+            width: 40px;
+            font-size: 30px;
+            cursor: pointer;
+            display:none;
+            color: #fff;
+            font-family: "Open Sans" sans-serif;
+       }
+
+.sidenav{
+            float: right;
+            height:100%;
+            width: 0;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            z-index: 12;
+            background:#222;
+            overflow-x: hidden;
+            display:flex;
+            flex-direction: column;
+            transition: all 0.5s;
+        }
+
+  #close{
+       color: #fff;
+       font-size: 1.6rem;
+  }
+
+ #close:hover{
+       color: #aaaaaa;
+  }
+     #list{   
+            margin:15px 15px;
+            padding: 10px;
+         }
+
+ .sidenav a{
+        text-decoration: none;      
+        color: #fff;
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        padding-left: 5px;
+    }
+
+  .sidenav a:hover{
+        color: #aaaaaa;
+    }
+
+.closebtn{
+           margin-top: 25px;
+           margin-left: 5px;
+           font-size: 30px!important;
+           color: white;
+           font-weight: bolder;
+           text-decoration: none;
+}
+
+.closebtn:hover{
+   color:#ff0000!important;
+   text-shadow: 1px 1px 1px #000;
+  }
+
+/*End of mobile responsive side menu*/
+
+/* ========================carasoul============================ */
+   #demo{
+     z-index: 1;
+   }
+  
+  .carosuelHead{
+        font-family: 'Roboto', sans-serif;
+  }
+  
+  .carosuelTxt{
+       font-family: 'Raleway', sans-serif;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+  }
+  
+  .anm{
+    animation-delay: 1s;
+  }
+
+ /*==================J&C section starts==================================*/
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #ee0000;
+  width: 120px;
+}
+
+.anm1,.anm2{
+    opacity: 0;   /*for not to display div before animation encounters*/
+    animation-timing-function:ease-out;
+}
+
+.anm1 .animate__animated,.anm2 .animate__animated{
+    opacity: 1;
+}
+
+/*==================== why choose J&C section starts=============================*/
+#whyChoose{
+  background: #eeeeee;
+}
+
+#line2{
+    border-top: 3px solid #ff0000;
+    width: 80%;
+}
+
+/*===========================Our Gallery section starts============================*/
+#line3{
+    border-top: 3px solid #ff0000;
+    width: 300px;
+}
+
+.galry{
+     box-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;
+}
+/*====================our services section starts================================*/
+.titletext{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#servicesIcon{
+    background: #ddd;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 20px;
+    color: #e6274b;
+}
+#servicesIcon:hover{
+    background: #e6274b;
+    color: #fff;
+}
+
+.servicesAnm{
+      opacity: 0;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+}
+
+.servicesAnm .animate__animated{
+    opacity: 1;
+}
+/*======================Footer section starts=============================*/
+hr.change{
+    border-top: 1px solid #fff;
+    width: 85%;
+    margin:15px 7.7%;
+}
+
+.footerTop:hover{
+  background:  #333;
+  border-radius: 10px;
+}
+
+.arrowHover:hover{
+  color: #aaaaaa;
+}
+
+.footerPhHover:hover{
+   color: #aaaaaa;
+}
+
+#aboveFooter1{
+ background: #000;
+}
+
+#topBtn{  /*go to top button*/
+    position: fixed;
+    right: 0px;
+    bottom: 20px;
+    z-index: 50;
+    display: none; /*when we are top do not show go to top button. show after certain scroll*/
+}
+
+footer{
+    height: 60px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding:30px 15px;
+}
+
+/* ==============================media queries started========================
+ ===========================================================================*/
+@media only screen and (max-width:1000px){
+    /* services*/
+
+}
+
+ @media only screen and (max-width:850px){
+   /* header*/
+   .topheader{
+     display: none;
+   }
+
+   .navbar{
+   margin-top: 0vh;
+   }
+}
+
+@media only screen and (max-width:700px){
+    /*navbar section*/
+  .nav-menu a{
+    display:none;
+   }
+
+   .navmenu{
+    display: block;
+   }
+
+   .footerTop{
+     text-align: center;
+   }
+}
+
+@media only screen and (max-width:500px){
+  html{
+    font-size: 15px;
+  }
+
+  .carousel-inner img {
+    height: 50vh;
+  }
+  
+/*  above footer */
+  hr.change{
+    width: 300px;
+  }
+}
+
+footer{
+  padding-top: 13px;
+}
+
+@media only screen and (max-width:400px){
+  html{
+    font-size: 14px;
+  }
+}
