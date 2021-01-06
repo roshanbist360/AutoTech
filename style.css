@@ -42,7 +42,7 @@ html{
 /*============== Heder section ends and navbar starts ================ */
 /*============== Heder section ends and navbar starts ================ */
 .navbar{
-   height: 80px;
+   height: 75px;
    width: 100%;
    background: #222;
    z-index: 15;
@@ -51,14 +51,14 @@ html{
 
 .logo{
    float: left;
-   margin-left: 20px;
-   height:70px;
-   width:140px;
+   margin-left: 15px;
+   height:68px;
+   width:120px;
 }
 
 .logo img{
-   height:60px;
-   width:120px; 
+   height:55px;
+   width:100px; 
 }
 
 .nav-menu{
@@ -67,17 +67,27 @@ html{
    margin-right: 25px;
  }
 
-.nav-menu a{
+.nav-menu ul{
+   list-style: none;
+   display: inline-flex;
+}
+
+.nav-menu ul li a{
     color: #fff;
-    text-decoration: none;
-    padding: 10px;
+    padding:5px  10px;
+    margin: 5px;
     font-size: 1.2rem;
     font-weight: 400;
 }
 
 .nav-menu a:hover{
     text-decoration: none;
-    color:  #dd0000;
+}
+
+ul li.active a{  /*color changing on clicked page*/
+   background: #000;
+   border-top-left-radius: 15px;
+   border-bottom-right-radius: 15px;
 }
 
 /*Below  code is for responsive side menu for mobile and other medium devices*/
@@ -254,6 +264,14 @@ hr.change{
 }
 
 .footerPhHover:hover{
+   color: #aaaaaa;
+}
+
+.lnks p{
+   width: 100px;
+}
+
+.lnks p:hover{
    color: #aaaaaa;
 }
 
