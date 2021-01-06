@@ -1,21 +1,13 @@
  
             'use strict';
 
-<<<<<<< HEAD
-            //Below js is for responsive sidebar navigation menu of header navigation======
-=======
             //Below js is for responsive sidebar navigation menu of header navigation
->>>>>>> 0b56f3fe00175135e906530cc01bdf8ebe465ae2
            function openNav(){
                   document.getElementById('mySidenav').style.width="200px";
            }
 
             function closeNav(){
-<<<<<<< HEAD
-                  document.getElementById('mySidenav').style.width="0px";
-=======
                   document.getElementById('mySidenav').style.width="0";
->>>>>>> 0b56f3fe00175135e906530cc01bdf8ebe465ae2
            }
             
             //Below js is for changing actived or clicked nav menu color to red 
