@@ -85,6 +85,10 @@ html{
 }
 
 ul li.active a{  /*color changing on clicked page*/
+<<<<<<< HEAD
+=======
+   color: #ff2200;
+>>>>>>> 0b56f3fe00175135e906530cc01bdf8ebe465ae2
    background: #000;
    border-top-left-radius: 15px;
    border-bottom-right-radius: 15px;
